@@ -1,0 +1,133 @@
+:root {
+  --animation-time: 2s;
+}
+
+.bb,
+.bb::before,
+.bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+h2 {
+  margin-left: 12px;
+}
+
+.bb {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url(".png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+  color: #69ca62;
+  box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+}
+.bb::before,
+.bb::after {
+  content: "";
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after,
+.bb:hover::before {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #0f222b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text1 {
+  font-family: "Monoton", cursive;
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 0 0.5rem #fff, 0 2rem #ff0080;
+}
+.text2 {
+  font-family: "Righteous", cursive;
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 0 0.5rem 0.5rem #fff, 0 0.5rem 1rem #fff, 0 0.5rem 2rem #8938e6,
+    0 0.5rem 3rem #8938e6, 0 0.5rem 4rem #8938e6, 0 0.5rem 5rem #8938e6,
+    0 0.5rem 6rem #8938e6, 0 0.5rem 7rem #8938e6, 0 0.5rem 8rem #8938e6;
+}
+/* with a slight 3d effect */
+.text3 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0.2rem 0.5rem #65ecad, 0 0.2rem 0.1rem #3bee9b,
+    0 0.5rem 1rem #fff, 0 0.5rem 2rem #29f294, 0 0.5rem 3rem #29f294,
+    0 0.5rem 4rem #29f294, 0 0.5rem 5rem #29f294, 0 0.5rem 6rem #29f294,
+    0 0.5rem 7rem #29f294, 0 0.5rem 8rem #29f294;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#red {
+  -webkit-animation: flicker var(--animation-time) ease alternate infinite;
+  animation: flicker var(--animation-time) ease alternate infinite;
+}
