@@ -1,3 +1,6 @@
+/*
+ * Animación del logo de la home
+ */
 const red = document.querySelector("#red");
 
 function setProperty(duration) {
