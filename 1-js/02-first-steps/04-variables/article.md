@@ -295,7 +295,7 @@ Algunas reglas buenas para seguir son:
 
 ¿Suena simple? De hecho lo es, pero la creación de nombres de variables descriptivos y concisos en la práctica no lo es.
 
-#####"Reuse or create?"
+##### "Reuse or create?"
 Y la última nota. Hay algunos programadores perezosos que, en lugar de declarar nuevas variables, tienden a reutilizar las existentes.
 
 Como resultado, sus variables son como cajas en las que la gente tira cosas diferentes sin cambiar sus pegatinas. ¿Qué hay dentro de la caja ahora? ¿Quién sabe? Tenemos que acercarnos y comprobarlo.
