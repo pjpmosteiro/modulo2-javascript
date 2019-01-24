@@ -15,7 +15,7 @@ while (condition) {
 
 Mientras que la `condition` sea `true`, el `code` del _loop body_ es ejecutado.
 
-Por ejemplo, el siguiente buvle general `i` mientras que `i < 3`:
+Por ejemplo, el siguiente bucle general `i` mientras que `i < 3`:
 
 ```js run
 let i = 0;
@@ -26,15 +26,13 @@ while (i < 3) {
 }
 ```
 
-A single execution of the loop body is called _an iteration_. The loop in the example above makes three iterations.
-
 Una sola ejecución del cuerpo del bucle se llama _an iteration_. El bucle en el El ejemplo anterior hace tres iteraciones
 
 Si `i++` faltaba en el ejemplo anterior, el bucle se repetiría (en teoría) para siempre. En la práctica, el navegador proporciona formas de detener dichos bucles y, en el lado del servidor, podemos detener el proceso.
 
 Cualquier expresión o variable puede ser una condición de bucle, no solo comparaciones: la condición se evalúa y se convierte en un valor booleano con `while`.
 
-Por ejemplo, una forma más corta de escribir. `while (i != 0)` is `while (i)`:
+Por ejemplo, una forma más corta de escribir. `while (i != 0)` es `while (i)`:
 
 ```js run
 let i = 3;

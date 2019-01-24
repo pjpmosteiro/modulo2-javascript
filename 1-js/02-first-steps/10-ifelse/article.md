@@ -68,7 +68,7 @@ if (cond) {
 
 ## The "else" clause
 
-La instrucción `if` puede contener un bloque" else "opcional. Se ejecuta cuando la condición es falsa.
+La instrucción `if` puede contener un bloque `else` opcional. Se ejecuta cuando la condición es falsa.
 
 Por ejemplo:
 

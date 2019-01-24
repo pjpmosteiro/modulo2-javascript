@@ -45,7 +45,7 @@ let s = "my" + "string";
 alert(s); // mystring
 ```
 
-Tenga en cuenta que si uno de los operandos es una cadena, el otro también se convierte en una cadena.
+Ten en cuenta que si uno de los operandos es una cadena, el otro también se convierte en una cadena.
 
 Por ejemplo:
 
