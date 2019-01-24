@@ -103,7 +103,7 @@ alert( userName ); // *!*Bob*/!*, the value was modified by the function
 
 La variable externa solo se usa si no hay una local. Por lo tanto, una modificación ocasional puede suceder si olvidamos `let`.
 
-Si se declara una variable con el mismo nombre dentro de la función, entonces _se muestra_ la externa. Por ejemplo, en el código de abajo, la función utiliza el `userName` local. El exterior se ignora:
+Si se declara una variable con el mismo nombre dentro de la función, entonces _se omite_ la externa. Por ejemplo, en el código de abajo, la función utiliza el `userName` local. El exterior se ignora:
 
 ```js run
 let userName = 'John';
