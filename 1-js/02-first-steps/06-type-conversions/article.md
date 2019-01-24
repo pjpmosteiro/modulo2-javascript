@@ -138,7 +138,7 @@ La conversión sigue las reglas:
 | <code>true&nbsp;/&nbsp;false</code> | `1 / 0`                                                                                                                                  |
 | `string`                            | La cadena se lee "tal cual" y se ignoran los espacios en blanco de ambos lados. Una cadena vacía se convierte en "0". Un error da `NaN`. |
 
-**`ToBoolean`** -- Occurs in logical operations. Can be performed with `Boolean(value)`.
+**`ToBoolean`** -- Ocurre en operaciones lógicas. Se puede realizar con`Boolean(value)`.
 
 Sigue las reglas:
 
@@ -147,9 +147,8 @@ Sigue las reglas:
 | `0`, `null`, `undefined`, `NaN`, `""` | `false`    |
 | any other value                       | `true`     |
 
-La mayoría de estas reglas son fáciles de entender y memorizar. Las notables excepciones en las que la gente suele cometer errores son:
+La mayoría de estas reglas son fáciles de entender y memorizar. Las excepciones en las que la gente suele cometer errores son:
 
 - `undefined` es `NaN` como número, no `0`.
 - `"0"` y la cadena de "sólo-espacio" como `" "` son true como boolean.
 
-Los objetos no están cubiertos aquí. Volveremos a ellos más adelante en el capítulo <info:objeto-a-primitivo> que está dedicado exclusivamente a objetos después de que aprendamos más cosas básicas sobre JavaScript.
