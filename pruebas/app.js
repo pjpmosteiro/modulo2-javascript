@@ -3,4 +3,8 @@
  * practicar Javascript!
  */
 
-console.log("Probando, probando, 1, 2, 3!");
+// let num;
+
+if (0 <= 100 && 0) {
+  alert("hola");
+}
