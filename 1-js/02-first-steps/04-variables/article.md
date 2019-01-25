@@ -9,7 +9,7 @@ Las variables se utilizan para almacenar esta información.
 
 ## A variable
 
-Una [variable](<https://en.wikipedia.org/wiki/Variable_(computer_science)>)) es un "almacenamiento con nombre" de datos. Podemos usar variables para almacenar golosinas, visitantes y otros datos.
+Una [variable](<https://en.wikipedia.org/wiki/Variable_(computer_science)>) es un "almacenamiento con nombre" de datos. Podemos usar variables para almacenar golosinas, visitantes y otros datos.
 
 Para crear una variable en JavaScript, utilice la palabra clave `let`.
 
@@ -56,7 +56,7 @@ let user = "John",
   message = "Hello";
 ```
 
-Eso puede parecer más corto, pero no lo recomendamos. Para una mejor legibilidad, por favor, utilice una sola línea por variable.
+Eso puede parecer más corto, pero no lo recomendamos. Para una mejor legibilidad, por favor, utiliza una sola línea por variable.
 
 La variante multilínea es un poco más larga, pero más fácil de leer:
 
@@ -152,7 +152,7 @@ let test123;
 
 Cuando el nombre contiene varias palabras, [camelCase](https://en.wikipedia.org/wiki/CamelCase) es de uso común. Es decir: las palabras van una tras otra, cada palabra empieza con una mayúscula: `myVeryLongName`.
 
-Lo que es interesante - el signo de dólar `'$'` y el subrayado `'_'` también pueden ser usados en los nombres. Son símbolos regulares, como las letras, sin ningún significado especial.
+Lo que es interesante - el signo de dólar `'$'` y el subrayado `'_'` también se pueden usar en los nombres. Son símbolos regulares, como las letras, sin ningún significado especial.
 
 Estos nombres son válidos:
 
@@ -171,7 +171,7 @@ let 1a; // cannot start with a digit
 let my-name; // hyphens '-' aren't allowed in the name
 ```
 
-Variables named `apple` and `AppLE` are two different variables.
+Las variable llamadas `apple` y `AppLE` son diferentes.
 
 #####"Non-English letters are allowed, but not recommended"
 Es posible usar cualquier lenguaje, incluyendo letras cirílicas o incluso jeroglíficos, como éste:
@@ -276,22 +276,22 @@ En otras palabras, las constantes con nombre de mayúscula sólo se utilizan com
 
 ## Name things right
 
-Hablando de variables, hay una cosa más extremadamente importante.
+Hablando de variables, hay una cosa más, extremadamente importante.
 
-Por favor, nombre sus variables con sensatez. Tómese su tiempo para pensar en esto.
+Por favor, nombra a tus variables con sensatez. Tómate tu tiempo para pensar en esto.
 
 La denominación de variables es una de las habilidades más importantes y complejas en la programación. Un rápido vistazo a los nombres de las variables puede revelar qué código fue escrito por un principiante frente a un desarrollador experimentado.
 
-En un proyecto real, la mayor parte del tiempo se dedica a modificar y ampliar un código base existente en lugar de escribir algo completamente separado de cero. Cuando volvemos a algún código después de hacer otra cosa por un tiempo, es mucho más fácil encontrar información bien etiquetada. O, en otras palabras, cuando las variables tienen buenos nombres.
+En un proyecto real, la mayor parte del tiempo se dedica a modificar y ampliar un código base existente en lugar de escribir algo completamente separado desde cero. Cuando volvemos a algún código después de hacer otra cosa por un tiempo, es mucho más fácil encontrar información bien etiquetada. O, en otras palabras, cuando las variables tienen buenos nombres.
 
-Por favor, dedique tiempo a pensar en el nombre correcto para una variable antes de declararla. Hacerlo te lo devolverá generosamente.
+Por favor, dedica tiempo a pensar en el nombre correcto para una variable antes de declararla. Hacerlo te lo devolverá generosamente.
 
 Algunas reglas buenas para seguir son:
 
-- Utilice nombres legibles para humanos como `userName` o `shoppingCart`.
-- Manténgase alejado de abreviaturas o nombres cortos como `a`,`b`, `c`, a menos que realmente sepa lo que está haciendo.
-- Haga que los nombres sean lo más descriptivos y concisos posible. Ejemplos de malos nombres son `data` y `value`. Esos nombres no dicen nada. Sólo está bien usarlos si el contexto del código hace que sea excepcionalmente obvio a qué datos o valor hace referencia la variable.
-- Acuerde los términos dentro de su equipo y en su propia mente. Si un visitante del sitio es llamado `user` entonces debemos nombrar variables relacionadas como `currentUser` o `newUser` en lugar de `currentVisitor` o `newManInTownNeno`.
+- Utiliza nombres legibles para humanos como `userName` o `shoppingCart`.
+- Mantente alejado de abreviaturas o nombres cortos como `a`,`b`, `c`, a menos que realmente sepas lo que está haciendo.
+- Haz que los nombres sean lo más descriptivos y concisos posible. Ejemplos de malos nombres son `data` y `value`. Esos nombres no dicen nada. Sólo está bien usarlos si el contexto del código hace que sea excepcionalmente obvio a qué datos o valor hace referencia la variable.
+- Acuerda los términos dentro de tu equipo y en tu propia mente. Si un visitante del sitio es llamado `user` entonces debemos nombrar variables relacionadas como `currentUser` o `newUser` en lugar de `currentVisitor` o `newManInTownNeno`.
 
 ¿Suena simple? De hecho lo es, pero la creación de nombres de variables descriptivos y concisos en la práctica no lo es.
 
