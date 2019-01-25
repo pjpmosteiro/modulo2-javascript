@@ -62,7 +62,7 @@ Más en: <info:strict-mode>.
 
 ## Variables
 
-Puede ser declarado usando:
+Pueden ser declaradas usando:
 
 - `let`
 - `const` (constante, no se puede cambiar)
@@ -124,7 +124,7 @@ alert("Visitor: " + userName); // Alice
 alert("Tea wanted: " + isTeaWanted); // true
 ```
 
-More in: <info:alert-prompt-confirm>.
+Más en: <info:alert-prompt-confirm>.
 
 ## Operators
 
@@ -173,7 +173,7 @@ Otras comparaciones se convierten a un número también.
 Otros operadores
 : Hay pocos más, como un operador de coma.
 
-More in: <info:operators>, <info:comparison>, <info:logical-operators>.
+Más en: <info:operators>, <info:comparison>, <info:logical-operators>.
 
 ## Loops
 
@@ -199,13 +199,13 @@ More in: <info:operators>, <info:comparison>, <info:logical-operators>.
 - La variable declarada en el bucle `for(let...)` es visible solo dentro del bucle. Pero también podemos omitir `let` y reutilizar una variable existente.
 - Las directivas `break/continue` permiten salir de todo el bucle / iteración actual. Use etiquetas para romper los bucles anidados.
 
-Details in: <info:while-for>.
+Detalles en: <info:while-for>.
 
 Más adelante estudiaremos más tipos de bucles para tratar con objetos.
 
 ## The "switch" construct
 
-La construcción "switch" puede reemplazar múltiples cheques `if`. Utiliza `===` (igualdad estricta) para las comparaciones.
+La construcción "switch" puede reemplazar múltiples elementos `if`. Utiliza `===` (igualdad estricta) para las comparaciones.
 
 Por ejemplo:
 
@@ -225,7 +225,7 @@ switch (age) {
 }
 ```
 
-Details in: <info:switch>.
+Detalles en: <info:switch>.
 
 ## Functions
 
@@ -281,7 +281,7 @@ Cubrimos tres formas de crear una función en JavaScript:
 | visible en todo el bloque de código | creado cuando la ejecución lo alcanza                    |
 | -                                   | puede tener un nombre, visible solo dentro de la función |
 
-More: see <info:function-basics>, <info:function-expressions-arrows>.
+Más: ver <info:function-basics>, <info:function-expressions-arrows>.
 
 ## More to come
 
