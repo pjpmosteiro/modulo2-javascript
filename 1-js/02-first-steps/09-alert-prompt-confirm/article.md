@@ -6,7 +6,7 @@ Pero seguiremos usando el navegador como nuestro entorno de demostración, por l
 
 ## alert
 
-Syntax:
+Sintaxis:
 
 ```js
 alert(message);
@@ -68,7 +68,7 @@ let test = prompt("Test", ""); // <-- for IE
 
 ## confirm
 
-The syntax:
+La sintaxis:
 
 ```js
 result = confirm(question);
