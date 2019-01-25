@@ -4,7 +4,7 @@ Conocemos muchos operadores de comparación de matemáticas:
 
 - Mayor/menor que: <code> a &gt; b </code>, <code> a &lt; b </code>.
 - Mayor/menor que o igual: <code> a &gt; = b </code>, <code> a &lt; = b </code>.
-- Igual a: `a == b` (tenga en cuenta que el doble signo de igual`=`. Un solo símbolo`a = b` significaría una asignación).
+- Igual a: `a == b` (tenga en cuenta el doble signo de igual`=`. Un solo símbolo`a = b` significaría una asignación).
 - No es igual. En matemáticas, la notación es <code> &ne; </code>, pero en JavaScript está escrita como una asignación con un signo de exclamación: <code> a != B </code>.
 
 ## Boolean is the result
@@ -46,9 +46,9 @@ alert("Bee" > "Be"); // true
 El algoritmo para comparar dos cadenas es simple:
 
 1. Compara el primer carácter de ambas cadenas.
-2. Si el primer carácter de la primera cadena es mayor (o menor) que el de la otra cadena, entonces la primera cadena es mayor (o menor) que la segunda. Hemos terminado
-3. De lo contrario, si los primeros caracteres de ambas cadenas son iguales, compare los segundos caracteres de la misma manera.
-4. Repita hasta el final de cualquiera de las cadenas.
+2. Si el primer carácter de la primera cadena es mayor (o menor) que el de la otra cadena, entonces la primera cadena es mayor (o menor) que la segunda. Hemos terminado.
+3. De lo contrario, si los primeros caracteres de ambas cadenas son iguales, compara los segundos caracteres de la misma manera.
+4. Repite hasta el final de cualquiera de las cadenas.
 5. Si ambas cadenas terminan en la misma longitud, entonces son iguales. De lo contrario, la cadena más larga es mayor.
 
 En los ejemplos anteriores, la comparación `'Z' > 'A'` obtiene un resultado en el primer paso, mientras que las cadenas `"Glow"` y `"Glee"` se comparan carácter por carácter:
@@ -61,7 +61,7 @@ En los ejemplos anteriores, la comparación `'Z' > 'A'` obtiene un resultado en 
 
 El algoritmo de comparación dado anteriormente es aproximadamente equivalente al que se usa en los diccionarios o guías telefónicas, pero no es exactamente el mismo.
 
-Por ejemplo, el caso importa. Una letra mayúscula `"A"` no es igual a la minúscula `"a"`. ¿Cuál es mayor? La minúscula `"a"`. ¿Por qué? Debido a que el carácter en minúscula tiene un índice mayor en la tabla de codificación interna que usa JavaScript (Unicode). Volveremos a los detalles específicos y las consecuencias de esto en el capítulo <info:string>.
+Por ejemplo, la mayúscula importa. Una letra mayúscula `"A"` no es igual a la minúscula `"a"`. ¿Cuál es mayor? La minúscula `"a"`. ¿Por qué? Debido a que el carácter en minúscula tiene un índice mayor en la tabla de codificación interna que usa JavaScript (Unicode). Volveremos a los detalles específicos y las consecuencias de esto en el capítulo <info:string>.
 
 ## Comparison of different types
 
@@ -86,7 +86,7 @@ alert(false == 0); // true
 Es posible que al mismo tiempo:
 
 - Dos valores son iguales.
-- Uno de ellos es `true` como booleano y el otro es`false` como boolean.
+- Uno de ellos es `true` como booleano y el otro es`false` como booleano.
 
 Por ejemplo:
 
@@ -190,7 +190,7 @@ alert(undefined == 0); // false (3)
 Obtenemos estos resultados porque:
 
 - Las comparaciones `(1)` y `(2)` devuelven `false` porque`undefined` se convierte a `NaN` y`NaN` es un valor numérico especial que devuelve `false` para todas las comparaciones.
-- La verificación de igualdad `(3)` devuelve `false` porque `undefined` solo es igual a `null` y ningún otro valor.
+- La verificación de igualdad `(3)` devuelve `false` porque `undefined` solo es igual a `null` y a ningún otro valor.
 
 ### Evade problems
 
@@ -205,5 +205,5 @@ No use comparaciones `>= > < <=` con una variable que puede ser `null/undefined`
 - Los operadores de comparación devuelven un valor booleano.
 - Las cadenas se comparan letra por letra en el orden de "diccionario".
 - Cuando se comparan valores de diferentes tipos, se convierten en números (con la exclusión de una verificación de igualdad estricta).
-- Los valores `null` y `undefined` son iguales`==`entre yes and no son iguales a ningún otro valor.
+- Los valores `null` y `undefined` son iguales`==`entre si y no son iguales a ningún otro valor.
 - Tenga cuidado al usar comparaciones como `>` o `<` con variables que ocasionalmente pueden ser `null/undefined`. La comprobación de `null/undefined` por separado es una buena idea.
