@@ -1,5 +1,4 @@
-Please note the subtle, but important detail of the solution. We don't convert `value` to number instantly after `prompt`, because after `value = +value` we would not be able to tell an empty string (stop sign) from the zero (valid number). We do it later instead.
-
+Tenga en cuenta el detalle sutil, pero importante de la solución. No convertimos `value` en número instantáneamente después de `prompt`, porque después de `value = +value` no podríamos distinguir un string vacío (señal de stop) desde el cero (número válido). Lo hacemos más tarde en su lugar.
 
 ```js run demo
 function sumInput() {

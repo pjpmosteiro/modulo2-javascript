@@ -1,10 +1,10 @@
-importance: 5
+importancia: 5
 
 ---
 
 # Calling in an array context
 
-What is the result? Why?
+Cual es el resultado? ¿Por qué?
 
 ```js
 let arr = ["a", "b"];

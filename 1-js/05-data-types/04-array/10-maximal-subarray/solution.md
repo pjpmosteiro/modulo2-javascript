@@ -1,10 +1,10 @@
 # The slow solution
 
-We can calculate all possible subsums.
+Podemos calcular todos los subsumos posibles.
 
-The simplest way is to take every element and calculate sums of all subarrays starting from it.
+La forma más sencilla es tomar cada elemento y calcular sumas de todos los subarrays a partir de él.
 
-For instance, for `[-1, 2, 3, -9, 11]`:
+Por ejemplo, para `[-1, 2, 3, -9, 11]`:
 
 ```js no-beautify
 // Starting from -1:
@@ -33,7 +33,7 @@ For instance, for `[-1, 2, 3, -9, 11]`:
 -11
 ```
 
-The code is actually a nested loop: the external loop over array elements, and the internal counts subsums starting with the current element.
+El código es en realidad un bucle anidado: el bucle externo sobre los elementos del array y los conteos internos que comienzan con el elemento actual.
 
 ```js run
 function getMaxSubSum(arr) {
@@ -57,16 +57,14 @@ alert( getMaxSubSum([1, 2, 3]) ); // 6
 alert( getMaxSubSum([100, -9, 2, -3, 5]) ); // 100
 ```
 
-The solution has a time complexety of [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation). In other words, if we increase the array size 2 times, the algorithm will work 4 times longer.
+La solución tiene una complejidad de tiempo de [O(n<sup>2</sup>)](https://en.wikipedia.org/wiki/Big_O_notation). En otras palabras, si aumentamos el tamaño del array 2 veces, el algoritmo funcionará 4 veces más.
 
-For big arrays (1000, 10000 or more items) such algorithms can lead to a serious sluggishness.
-
+Para arrays grandes (1000, 10000 o más elementos) tales algoritmos pueden llevar a una seria lentitud.
 # Fast solution
 
-Let's walk the array and keep the current partial sum of elements in the variable `s`. If `s` becomes negative at some point, then assign `s=0`. The maximum of all such `s` will be the answer.
+Vayamos al array y mantengamos la suma parcial actual de elementos en la variable `s`. Si `s` se vuelve negativo en algún punto, entonces asigne` s=0`. El máximo de todos estos `s` será la respuesta.
 
-If the description is too vague, please see the code, it's short enough:
-
+Si la descripción es demasiado vaga, por favor vea el código, es lo suficientemente corto:
 ```js run
 function getMaxSubSum(arr) {
   let maxSum = 0;
@@ -89,6 +87,6 @@ alert( getMaxSubSum([1, 2, 3]) ); // 6
 alert( getMaxSubSum([-1, -2, -3]) ); // 0
 ```
 
-The algorithm requires exactly 1 array pass, so the time complexity is O(n).
+El algoritmo requiere exactamente 1 paso de array, por lo que la complejidad del tiempo es O (n).
 
-You can find more detail information about the algorithm here: [Maximum subarray problem](http://en.wikipedia.org/wiki/Maximum_subarray_problem). If it's still not obvious why that works, then please trace the algorithm on the examples above, see how it works, that's better than any words.
+Puede encontrar más información detallada sobre el algoritmo aquí: [Problema de subarray máximo](http://en.wikipedia.org/wiki/Maximum_subarray_problem). Si aún no es obvio por qué funciona, entonces rastree el algoritmo en los ejemplos anteriores, vea cómo funciona, eso es mejor que cualquier palabra.

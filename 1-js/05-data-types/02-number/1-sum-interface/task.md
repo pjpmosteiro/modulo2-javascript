@@ -4,8 +4,8 @@ importance: 5
 
 # Sum numbers from the visitor
 
-Create a script that prompts the visitor to enter two numbers and then shows their sum.
+Cree un script que solicite al visitante que ingrese dos números y luego muestre su suma.
 
 [demo]
 
-P.S. There is a gotcha with types.
+PD Hay un gotcha con tipos.

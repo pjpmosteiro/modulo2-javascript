@@ -1,6 +1,7 @@
 class ExtendedClock extends Clock {
   constructor(options) {
     super(options);
+    console.log(options);
     let { precision=1000 } = options;
     this._precision = precision;
   }

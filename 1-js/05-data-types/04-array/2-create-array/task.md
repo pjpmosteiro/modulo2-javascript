@@ -1,18 +1,18 @@
-importance: 5
+importancia: 5
 
 ---
 
 # Array operations.
 
-Let's try 5 array operations.
+Probemos 5 operaciones de arrays.
 
-1. Create an array `styles` with items "Jazz" and "Blues".
-2. Append "Rock-n-Roll" to the end.
-3. Replace the value in the middle by "Classics". Your code for finding the middle value should work for any arrays with odd length.
-4. Strip off the first value of the array and show it.
-5. Prepend `Rap` and `Reggae` to the array.
+1. Crea un array `styles` con ítems "Jazz"y "Blues".
+2. Agregue "Rock-n-Roll" al final.
+3. Reemplace el valor en el medio por "Classics". Su código para encontrar el valor medio debería funcionar para cualquier array con una longitud impar.
+4. Elimine el primer valor del array y muéstrelo.
+5. Prependa `Rap` y` Reggae` al array.
 
-The array in the process:
+EL array en el proceso:
 
 ```js no-beautify
 Jazz, Blues

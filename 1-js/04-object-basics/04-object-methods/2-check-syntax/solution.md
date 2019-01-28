@@ -1,6 +1,6 @@
 **Error**!
 
-Try it:
+Prueba:
 
 ```js run
 let user = {
@@ -11,19 +11,19 @@ let user = {
 }(user.go)(); // error!
 ```
 
-The error message in most browsers does not give understanding what went wrong.
+El mensaje de error en la mayoría de los navegadores no permite comprender qué fue lo que falló.
 
 **The error appears because a semicolon is missing after `user = {...}`.**
 
-JavaScript does not assume a semicolon before a bracket `(user.go)()`, so it reads the code like:
+JavaScript no asume un punto y coma antes de un corchete `(user.go)()`, por lo que lee el código como:
 
 ```js no-beautify
 let user = { go:... }(user.go)()
 ```
 
-Then we can also see that such a joint expression is syntactically a call of the object `{ go: ... }` as a function with the argument `(user.go)`. And that also happens on the same line with `let user`, so the `user` object has not yet even been defined, hence the error.
+Entonces también podemos ver que tal expresión conjunta es sintácticamente una llamada del objeto `{go: ...}` como una función con el argumento `(user.go)`. Y eso también sucede en la misma línea con `let user`, por lo que el objeto `user` aún no se ha definido, de ahí el error.
 
-If we insert the semicolon, all is fine:
+Si insertamos el punto y coma, todo está bien:
 
 ```js run
 let user = {
@@ -37,3 +37,5 @@ user.go(); // John
 ```
 
 Please note that brackets around `(user.go)` do nothing here. Usually they setup the order of operations, but here the dot `.` works first anyway, so there's no effect. Only the semicolon thing matters.
+
+Tenga en cuenta que los corchetes alrededor de `(user.go)` no hacen nada aquí. Por lo general, configuran el orden de las operaciones, pero aquí el punto `.` funciona primero de todos modos, así que no hay efecto. Sólo lo de punto y coma importa.

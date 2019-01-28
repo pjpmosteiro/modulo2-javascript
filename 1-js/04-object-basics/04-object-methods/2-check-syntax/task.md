@@ -4,16 +4,23 @@ importance: 2
 
 # Syntax check
 
-What is the result of this code?
-
+¿Cuál es el resultado de este código?
 
 ```js no-beautify
 let user = {
   name: "John",
-  go: function() { alert(this.name) }
-}
+  go: function() {
+    alert(this.name);
+  }
+}(user.go)();
 
-(user.go)()
+
+let user = {
+  name: "John",
+  go: function() {
+    alert(this.name);
+  }
+};
+(user.go)();
+user.go();
 ```
-
-P.S. There's a pitfall :)

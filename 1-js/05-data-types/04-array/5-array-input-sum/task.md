@@ -1,15 +1,14 @@
-importance: 4
+importancia: 4
 
 ---
 
 # Sum input numbers
 
-Write the function `sumInput()` that:
+Escribe la función `sumInput()` que:
 
-- Asks the user for values using `prompt` and stores the values in the array.
-- Finishes asking when the user enters a non-numeric value, an empty string, or presses "Cancel".
-- Calculates and returns the sum of array items.
+- Pregunta al usuario por los valores usando `prompt` y almacena los valores en el array.
+- Termina de preguntar cuando el usuario ingresa un valor no numérico, un string vacío o presiona "Cancel".
+- Calcula y devuelve la suma de elementos de array.
 
-P.S. A zero `0` is a valid number, please don't stop the input on zero.
-
+PD Un cero `0` es un número válido, por favor no detenga la entrada en cero.
 [demo]

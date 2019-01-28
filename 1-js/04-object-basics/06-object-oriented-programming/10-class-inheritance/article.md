@@ -2,7 +2,7 @@
 
 Las clases pueden extenderse unas a otras. Hay una buena sintaxis, técnicamente basada en la herencia prototípica.
 
-Para heredar de otra clase, debemos especificar `"extended"` y la clase padre antes de los corchetes `{..}`.
+Para heredar de otra clase, debemos especificar `"extends"` y la clase padre antes de los corchetes `{..}`.
 
 Aquí `Rabbit` hereda de `Animal`:
 
@@ -59,6 +59,7 @@ function f(phrase) {
     sayHi() { alert(phrase) }
   }
 }
+
 
 *!*
 class User extends f("Hello") {}

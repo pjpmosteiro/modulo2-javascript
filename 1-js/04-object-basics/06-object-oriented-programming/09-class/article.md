@@ -32,6 +32,10 @@ class User {
   sayHi() {
     alert(this.name);
   }
+
+  sayHi2() {
+    alert(this.name);
+  }
 }
 
 let user = new User("John");

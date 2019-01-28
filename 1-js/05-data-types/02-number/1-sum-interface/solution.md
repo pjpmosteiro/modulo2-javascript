@@ -6,7 +6,6 @@ let b = +prompt("The second number?", "");
 
 alert( a + b );
 ```
+Tenga en cuenta el unary plus `+` before `prompt`. Inmediatamente convierte el valor en un número.
 
-Note the unary plus `+` before `prompt`. It immediately converts the value to a number.
-
-Otherwise, `a` and `b` would be string their sum would be their concatenation, that is: `"1" + "2" = "12"`.
+De lo contrario, `a` y `b` serían unir su suma sería su concatenación, es decir: ` "1" + "2" = "12"`.
