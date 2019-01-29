@@ -8,4 +8,4 @@ Cree un script que solicite al visitante que ingrese dos números y luego muestr
 
 [demo]
 
-PD Hay un gotcha con tipos.
+PD Hay una pillada con tipos.
