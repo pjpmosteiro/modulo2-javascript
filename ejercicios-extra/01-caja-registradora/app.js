@@ -27,4 +27,9 @@ so for example if the give values are:
 
   The change would be 2.68 so the output should be:
   [ 'TWO', 'HALFDOLLAR', 'DIME', 'NICKLE', 'PENNY', 'PENNY', 'PENNY' ]
+
+
+  ***IF YOU FINISH TRY TO MAKE IT WORK IF THE NUMBERS ARE***
+  A: $_sdfvdsf,23.2fsdcds
+  B: fvfdv-vs,25.88fdsdf
 */
