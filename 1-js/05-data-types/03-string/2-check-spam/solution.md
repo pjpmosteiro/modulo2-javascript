@@ -1,14 +1,13 @@
-To make the search case-insensitive, let's bring the string to lower case and then search:
+Para que la búsqueda no distinga entre mayúsculas y minúsculas, llevemos la cadena a minúsculas y luego busquemos:
 
 ```js run
 function checkSpam(str) {
   let lowerStr = str.toLowerCase();
 
-  return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+  return lowerStr.includes("viagra") || lowerStr.includes("xxx");
 }
 
-alert( checkSpam('buy ViAgRA now') );
-alert( checkSpam('free xxxxx') );
-alert( checkSpam("innocent rabbit") );
+alert(checkSpam("buy ViAgRA now"));
+alert(checkSpam("free xxxxx"));
+alert(checkSpam("innocent rabbit"));
 ```
-

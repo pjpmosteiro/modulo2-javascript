@@ -28,7 +28,8 @@ let john = {
 
 john.sayHi(); // Hi buddy!
 ```
-Así que aquí hemos creado un objeto `john` con el método` sayHi`.
+
+Así que aquí hemos creado un objeto `john` con el método`sayHi`.
 
 Ya existen muchos objetos incorporados, como los que funcionan con fechas, errores, elementos HTML, etc. Tienen diferentes propiedades y métodos.
 
@@ -58,7 +59,7 @@ Así es como funciona:
 ```js run
 let str = "Hello";
 
-alert( str.toUpperCase() ); // HELLO
+alert(str.toUpperCase()); // HELLO
 ```
 
 Simple, ¿verdad? Esto es lo que realmente sucede en `str.toUpperCase()`:
@@ -76,8 +77,9 @@ Un número tiene métodos propios, por ejemplo, [toFixed(n)](https://developer.m
 ```js run
 let n = 1.23456;
 
-alert( n.toFixed(2) ); // 1.23
+alert(n.toFixed(2)); // 1.23
 ```
+
 Veremos métodos más específicos en los capítulos <info:number> y <info:string>.
 
 Algunos lenguajes como Java nos permiten crear "objetos envoltorios" para primitivos utilizando explícitamente una sintaxis como `new Number(1)` o `new Boolean(false)`.
@@ -87,9 +89,9 @@ En JavaScript, eso también es posible por razones históricas, pero altamente *
 Por ejemplo:
 
 ```js run
-alert( typeof 1 ); // "number"
+alert(typeof 1); // "number"
 
-alert( typeof new Number(1) ); // "object"!
+alert(typeof new Number(1)); // "object"!
 ```
 
 Y porque lo que sigue, `cero`, es un objeto, la alerta se mostrará:
@@ -97,8 +99,9 @@ Y porque lo que sigue, `cero`, es un objeto, la alerta se mostrará:
 ```js run
 let zero = new Number(0);
 
-if (zero) { // zero is true, because it's an object
-  alert( "zero is truthy?!?" );
+if (zero) {
+  // zero is true, because it's an object
+  alert("zero is truthy?!?");
 }
 ```
 
@@ -116,7 +119,7 @@ Un intento de acceder a una propiedad de tal valor daría el error:
 
 ```js run
 alert(null.test); // error
-````
+```
 
 ## Summary
 

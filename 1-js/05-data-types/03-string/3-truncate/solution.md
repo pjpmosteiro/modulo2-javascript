@@ -1,11 +1,9 @@
-The maximal length must be `maxlength`, so we need to cut it a little shorter, to give space for the ellipsis.
+La longitud máxima debe ser `maxlength`, por lo que necesitamos cortarla un poco más corta, para dar espacio a la elipsis.
 
-Note that there is actually a single unicode character for an ellipsis. That's not three dots.
+Tenga en cuenta que en realidad hay un solo carácter Unicode para una elipsis. Eso no es tres puntos.
 
 ```js run
 function truncate(str, maxlength) {
-  return (str.length > maxlength) ? 
-    str.slice(0, maxlength - 1) + '…' : str;
+  return str.length > maxlength ? str.slice(0, maxlength - 1) + "…" : str;
 }
 ```
-
