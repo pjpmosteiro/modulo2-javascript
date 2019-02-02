@@ -16,14 +16,6 @@ Los objetos simples también admiten métodos similares, pero la sintaxis es un 
 
 ## Object.keys, values, entries
 
-For plain objects, the following methods are available:
-
-- [Object.keys(obj)](mdn:js/Object/keys) -- returns an array of keys.
-- [Object.values(obj)](mdn:js/Object/values) -- returns an array of values.
-- [Object.entries(obj)](mdn:js/Object/entries) -- returns an array of `[key, value]` pairs.
-
-...But please note the distinctions (compared to map for example):
-
 Para objetos planos, los siguientes métodos están disponibles:
 
 - [Object.keys(obj)](mdn:js/Object/keys) - devuelve una matriz de claves.
@@ -39,7 +31,7 @@ Para objetos planos, los siguientes métodos están disponibles:
 
 La primera diferencia es que tenemos que llamar `Object.keys(obj)`, y no `obj.keys()`.
 
-¿Porque? La razón principal es la flexibilidad. Recuerda, los objetos son la base de todas las estructuras complejas en JavaScript. Así que podemos tener un objeto propio como `order` que implementa su propio método`order.values()`. Y todavía podemos llamar `Object.values(order)` en él.
+¿Por qué? La razón principal es la flexibilidad. Recuerda, los objetos son la base de todas las estructuras complejas en JavaScript. Así que podemos tener un objeto propio como `order` que implementa su propio método`order.values()`. Y todavía podemos llamar `Object.values(order)` en él.
 
 La segunda diferencia es que los métodos `Object.*` Devuelven objetos de matriz "real", no solo un iterable. Eso es principalmente por razones históricas.
 
