@@ -4,7 +4,7 @@ importance: 5
 
 # Store read dates
 
-HAy una serie de mensajes como en la [tarea anterior](info:task/recipients-read). L situación es similar
+Hay una serie de mensajes como en la [tarea anterior](info:task/recipients-read). La situación es similar
 
 ```js
 let messages = [
