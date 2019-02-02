@@ -14,9 +14,9 @@ let messages = [
 ];
 ```
 
-Su código puede acceder a él, pero los mensajes son administrados por el código de otra persona. Los nuevos mensajes se agregan, los antiguos se eliminan regularmente con ese código y no se conocen los momentos exactos en que ocurre.
+Tu código puede acceder a él, pero los mensajes son administrados por el código de otra persona. Los nuevos mensajes se agregan, los antiguos se eliminan regularmente con ese código y no se conocen los momentos exactos en que ocurre.
 
-Ahora, ¿qué estructura de datos podría usar para almacenar información si el mensaje "se ha leído"? La estructura debe ser adecuada para dar la respuesta "¿se leyó?" para el objeto de mensaje dado.
+Ahora, ¿qué estructura de datos podrías usar para almacenar información si el mensaje "se ha leído"? La estructura debe ser adecuada para dar la respuesta "¿se leyó?" para el objeto de mensaje dado.
 
 PD Cuando se elimina un mensaje de `messages`, también debería desaparecer de su estructura.
 
